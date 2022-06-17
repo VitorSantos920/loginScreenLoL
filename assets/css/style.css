@@ -7,36 +7,28 @@
     box-sizing: border-box;
 }
 
-body {
-    display: flex;
-    height: 100vh;
-}
+body {height: 100vh;}
 
-::-webkit-scrollbar {
-    display: none;
-}
+::-webkit-scrollbar {display: none;}
 
-.title-main, .input, .account {
-    font-family: 'Lexend Deca', sans-serif;
-}
+.title-main, .input, .account {font-family: 'Lexend Deca', sans-serif;}
 /* Fim General */
+
+body, .main, .content-main {display: flex;}
+.header-main, .content-main, .footer-main {text-align: center;}
 
 /* Main Styles */
 .main {
-    display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    padding: 20px;
     gap: 20px;
     width: 30vw;
+    padding: 20px;
 }
 
 /* Header Styles */
-.main .header-main {
-    width: 100%;
-    text-align: center;
-}
+.main .header-main {width: 100%;}
 
 .main .header-main img {
     width: 110px;
@@ -46,13 +38,11 @@ body {
 
 /* Content Main Styles */
 .main .content-main {
-    display: flex;
-    width: 100%;
-    text-align: center;
     flex-direction: column;
     align-items: center;
-    max-width: 500px;
     gap: 20px;
+    width: 100%;
+    max-width: 500px;
 }
 
 /* Title Styles */
@@ -67,11 +57,11 @@ body {
     width: 315px;
     height: 40px;
     border: none;
-    border-radius: 5px;
-    background-color: #ECECEC;
-    padding-left: 15px;
-    font-size: 10px;
     outline: 0;
+    font-size: 10px;
+    border-radius: 5px;
+    padding-left: 15px;
+    background-color: #ECECEC;
 }
 
 .main .content-main .input:focus {
@@ -81,15 +71,13 @@ body {
 /* Fim Input */
 
 /* Social Media Styles */
-.main .content-main .loginSocialMedia {
-    text-align: left;
-}
+.main .content-main .loginSocialMedia {text-align: left;}
 
 .loginSocialMedia button {
     width: 100px;
     height: 30px;
-    border-radius: 5px;
     border: none;
+    border-radius: 5px;
 }
 
 .loginSocialMedia button:first-child {background-color: #1B77F3;}
@@ -101,10 +89,10 @@ body {
 
 /* Checkbox Login Styles */
 .checkLogin {
-    text-align: left;
     width: 310px;
-    font-family: sans-serif;
+    text-align: left;
     font-size: 14px;
+    font-family: sans-serif;
 }
 /* Fim Checkbox */
 /* Fim Content Main */
@@ -114,28 +102,23 @@ body {
 .button {
     width: 60px;
     height: 60px;
+    border-radius: 35%;
     border-color: rgba(0, 0, 0, 0.116);
     background-color: white;
-    border-radius: 35%;
 }
 
-.button img {
-    opacity: 0.1;
-}
+.button img {opacity: 0.1;}
 /* Fim Button Submit */
 
 /* Footer Styles */
 .main .footer-main {
     width: 300px;
-    text-align: center;
-    color: #A7A7A7;
     font-size: 8px;
+    color: #A7A7A7;
     text-transform: uppercase;
 }
 
-.main .footer-main p:last-child{
-    text-align: right;
-}
+.main .footer-main p:last-child{text-align: right;}
 
 .splashArt{
     width: 70vw;
@@ -143,4 +126,3 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
