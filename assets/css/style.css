@@ -1,5 +1,6 @@
 /* General Styles */
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 
 * {
     padding: 0;
@@ -7,9 +8,8 @@
     box-sizing: border-box;
 }
 
-body {height: 100vh;}
 
-::-webkit-scrollbar {display: none;}
+body {height: 100vh;}
 
 .title-main, .input, .account {font-family: 'Lexend Deca', sans-serif;}
 /* Fim General */
@@ -121,7 +121,7 @@ body, .main, .content-main {display: flex;}
 /* Fim Footer */
 /* Fim Main */
 
-/* SplashArt Styles */
+/* SplashArt Styles / General */
 .splashArt{
     width: 70vw;
     background-image: url("/assets/img/ahri.jpeg");
@@ -129,24 +129,43 @@ body, .main, .content-main {display: flex;}
     background-repeat: no-repeat;
 }
 
-.splashArt .profile {
+.alerts , .profile {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
+    margin: 18px 15px;
+}
+
+/* Alerts Styles */
+.splashArt .alerts {
+    width: 36px;
+    height: 36px;
+    background-color: rgb(224, 75, 224);
+    transform: rotate(45deg);
+}
+
+.splashArt .alerts p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    transform: rotate(315deg);
+}
+/* Fim Alerts */
+
+/* Profile Styles */
+.splashArt .profile {
     width: 50px;
     height: 50px;
     opacity: 0.5;
     right: 0;
-    margin: 18px 15px;
     border-radius: 17px;
     border: 3px solid rgb(77, 77, 77);
-    color: white;
     background-color: rgba(145, 145, 145, 0.349);
 }
 
 .profile img {
     width: 50%;
     height: 50%;
-    color: white;
 }
+/* Fim Profile */
+/* Fim SplashArt */
