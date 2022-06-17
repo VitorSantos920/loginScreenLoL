@@ -2,4 +2,4 @@
 
 Desenvolvimento da tela de login do jogo League of Legends, da Riot Games.
 
-<img src="/assets/img/imgForGithub.png">
+<img src="/assets/img/imgToGithub.png">
